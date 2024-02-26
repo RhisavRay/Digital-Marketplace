@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +16,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="h-full">
+
+      {/*
+      The default code given was as follows,
+
       <body className={inter.className}>{children}</body>
+
+      This only has one classname attribute. But now we want to add other classes as well using tailwind.
+      This is where we use a "cn()" helper function, which lets us apply multiple class groups to be applied
+       */}
+
+      <body className={cn("relative h-full font-sans antialiased", inter.className)}>{children}</body>
+      
     </html>
   );
 }
