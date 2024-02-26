@@ -27,7 +27,13 @@ export default function RootLayout({
       This is where we use a "cn()" helper function, which lets us apply multiple class groups to be applied
        */}
 
-      <body className={cn("relative h-full font-sans antialiased", inter.className)}>{children}</body>
+      <body
+        className={cn(
+          "relative h-full font-sans antialiased",
+          inter.className
+        )}>
+          {children}
+      </body>
       
     </html>
   );
