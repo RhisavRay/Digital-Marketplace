@@ -49,7 +49,7 @@ export default function Home() {
             {perks.map((perk) => (
               <div key={perk.name} className="text-center md:flex md:items-start md:text-left lg:block lg:text-center">
                 <div className="md:flex-shrink-0 flex justify-centre">
-                  <div className="h-16 w-16 flex items-centre justify-center roundded-full bg-[#fff1ba]"></div>
+                  <div className="h-16 w-16 flex items-centre justify-center roundded-full bg-[#fff1ba] text-[#b48f32]"></div>
                 </div>
               </div>
             ))}
