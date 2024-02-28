@@ -46,7 +46,13 @@ export default function Home() {
       <section className="border-t gorder-gray-200bg-gray-50">
         <MaxWidthWrapper className="py-20">
           <div className="grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-3 lg:gap-x-8 lg:gap-y-0">
-
+            {perks.map((perk) => (
+              <div key={perk.name} className="text-center md:flex md:items-start md:text-left lg:block lg:text-center">
+                <div className="md:flex-shrink-0 flex justify-centre">
+                  <div className="h-16 w-16 flex items-centre justify-center roundded-full bg-[#fff1ba]"></div>
+                </div>
+              </div>
+            ))}
           </div>
         </MaxWidthWrapper>
       </section>
