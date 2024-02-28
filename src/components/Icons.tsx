@@ -2,6 +2,10 @@ import { LucideProps } from "lucide-react";
 
 export const Icons = {
     logo: (props: LucideProps) => (
+
+        // Here we have passed the props to the svg file so that it can be styled accordingly after being imported
+        // to a different file.
+
         <svg {...props} viewBox="0 0 512 512">
             <g>
             <path
