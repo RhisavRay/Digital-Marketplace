@@ -1,5 +1,6 @@
 import React from 'react'
 import MaxWidthWrapper from './MaxWidthWrapper'
+import Link from 'next/link'
 
 const Navbar = () => {
   return (
@@ -9,6 +10,13 @@ const Navbar = () => {
                 <div className="border-b border-gray-200">
                     <div className="flex h-16 items-center">
                         {/* Mobile Navigation */}
+
+                        {/* Desktop Navigation */}
+                        <div className="ml-4 flex lg:ml-0">
+                            <Link href='/'>
+                                {/* Logo Goes Here */}
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </MaxWidthWrapper>
