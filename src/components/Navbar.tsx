@@ -10,13 +10,17 @@ const Navbar = () => {
             <MaxWidthWrapper>
                 <div className="border-b border-gray-200">
                     <div className="flex h-16 items-center">
-                        {/* Mobile Navigation */}
+                        {/* TODO: Mobile Navigation */}
 
                         {/* Desktop Navigation */}
                         <div className="ml-4 flex lg:ml-0">
                             <Link href='/'>
                                 <Icons.logo className='h-10 w-10'/>
                             </Link>
+                        </div>
+
+                        <div className="hidden z-50 lg:ml-8 lg:block lg:self-stretch">  {/* The reason for hidden class is to keep it hidden for small screen sizes, i.e., for mobile devices as they will have a different navigation layout */}
+                            {/* TODO: NavItems.tsx */}
                         </div>
                     </div>
                 </div>
