@@ -1,6 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { ArrowDownToLine, CheckCircle, Ghost } from "lucide-react";
+import { ArrowDownToLine, CheckCircle, Ghost, Leaf } from "lucide-react";
 import Link from "next/link";
 
 const perks = [
@@ -13,6 +13,11 @@ const perks = [
     name: "Guaranteed Quality",
     icon: CheckCircle,
     desc: "Every asset on our platform is checked and verified by our team to maintain high quality standards. Not happy? We offer a 30-day money back guarantee, no questions asked."
+  },
+  {
+    name: "For The Planet",
+    icon: Leaf,
+    desc: "We've pledged 1% of our sales to the preservation and restoration of the envioronment."
   }
 ]
 
