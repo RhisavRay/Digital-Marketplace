@@ -15,7 +15,7 @@ export default function Home() {
         <p className="mt-6 text-lg max-w-prose text-muted-foreground">
           Welcome to Digital Hippo. Every asset on our  platform is verified by a team of experts to ensure we meet the highest quality standards.
         </p>
-        <div className="flex flex-col sm-flex-row gap-4 mt-6">
+        <div className="flex flex-col sm:flex-row gap-4 mt-6">
           <Link href='/products' className={buttonVariants()}>Browse Trending</Link>
           <Button variant={Ghost}>Our quality promise &rarr;</Button>
         </div>
