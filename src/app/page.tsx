@@ -1,6 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { ArrowDownToLine, Ghost } from "lucide-react";
+import { ArrowDownToLine, CheckCircle, Ghost } from "lucide-react";
 import Link from "next/link";
 
 const perks = [
@@ -8,6 +8,11 @@ const perks = [
     name: "Instant Delivery",
     icon: ArrowDownToLine,
     desc: "Get your assets delivered to your email in seconds and download them right away."
+  },
+  {
+    name: "Guaranteed Quality",
+    icon: CheckCircle,
+    desc: "Every asset on our platform is checked and verified by our team to maintain high quality standards."
   }
 ]
 
