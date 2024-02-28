@@ -61,7 +61,7 @@ export default function Home() {
                     {perk.name}
                   </h3>
                   <p className="mt-3 text-small text-muted-foreground">
-                    {perk.desc  }
+                    {perk.desc}
                   </p>
                 </div>
               </div>
