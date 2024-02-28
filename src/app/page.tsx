@@ -12,7 +12,7 @@ const perks = [
   {
     name: "Guaranteed Quality",
     icon: CheckCircle,
-    desc: "Every asset on our platform is checked and verified by our team to maintain high quality standards."
+    desc: "Every asset on our platform is checked and verified by our team to maintain high quality standards. Not happy? We offer a 30-day money back guarantee, no questions asked."
   }
 ]
 
