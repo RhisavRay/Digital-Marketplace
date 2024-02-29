@@ -1,6 +1,7 @@
 "use client"
 import { PRODUCT_CATEGORIES } from "@/config"
 import { useState } from "react"
+import NavItem from "./NavItem"
 
  //Added to turn it to a client side component. Bydefault all Next.js components are server side components.
 
@@ -28,8 +29,7 @@ const NavItems = () => {
         const isOpen = i === activeIndex //To check if the current index is open or not
 
         return(
-        <></>
-        // TODO: Create NavItem.jsx file
+        <NavItem/>
         )
       })}
     </div>
