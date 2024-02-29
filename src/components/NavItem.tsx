@@ -4,6 +4,7 @@ import { PRODUCT_CATEGORIES } from "@/config"
 import { Button } from "./ui/button"
 import { ChevronDown } from "lucide-react"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 type Category = typeof PRODUCT_CATEGORIES[number]
 
@@ -39,7 +40,7 @@ const NavItem = ({ category, handleOpen, isAnyOpen, isOpen } : NavItemProps) => 
                                 {category.featured.map((item) => (
                                     <div key={item.name} className="group relative text-base sm:text-sm">
                                         <div className="relative aspect-video overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-                                            
+                                            <Image src={item.imgSrc} alt="product category image" fill className="object-cover object-center"/>
                                         </div>
                                     </div>
                                 ))}
