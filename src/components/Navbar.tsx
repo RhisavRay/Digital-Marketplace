@@ -60,7 +60,7 @@ const Navbar = () => {
                                 )}
 
                                 <div className="ml-4 flow-root lg:ml-6">
-                                    
+                                    {/* TODO: Make Cart.tsx */}
                                 </div>
                             </div>
                         </div>
