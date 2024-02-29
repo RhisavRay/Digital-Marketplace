@@ -23,6 +23,13 @@ const Navbar = () => {
                         <div className="hidden z-50 lg:ml-8 lg:block lg:self-stretch">  {/* The reason for hidden class is to keep it hidden for small screen sizes, i.e., for mobile devices as they will have a different navigation layout */}
                             <NavItems/>
                         </div>
+
+                        {/* Right side of navbar */}
+                        <div className="ml-auto flex items-center">
+                            <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+                                
+                            </div>
+                        </div>
                     </div>
                 </div>
             </MaxWidthWrapper>
