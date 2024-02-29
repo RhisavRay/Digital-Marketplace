@@ -31,6 +31,16 @@ const NavItem = ({ category, handleOpen, isAnyOpen, isOpen } : NavItemProps) => 
                 "animate-in fade-in-10 slide-in-from-top-5" : !isAnyOpen
             })}>
                 <div className="absolute inset-0 top-1/2 bg-white shadow" aria-hidden="true"/>
+
+                <div className="relative bg-white">
+                    <div className="mx-auto max-w-7xl px-8">
+                        <div className="grid grid-cols-4 gap-x-8 gap-y-10 py-16">
+                            <div className="col-span-4 col-start-1 grid grid-cols-3 gap-x-3">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         ) : null}
     </div>
