@@ -29,7 +29,12 @@ const NavItems = () => {
         const isOpen = i === activeIndex //To check if the current index is open or not
 
         return(
-          <NavItem/>
+          <NavItem
+            category={category}
+            handleOpen={handleOpen}
+            isOpen={isOpen}
+            key={category.value}
+          />
         )
       })}
     </div>
