@@ -2,6 +2,7 @@
 import { PRODUCT_CATEGORIES } from "@/config"
 import { useRef, useState } from "react"
 import NavItem from "./NavItem"
+import { useOnClickOutside } from "@/hooks/use-on-click-outside"
 
  //Added to turn it to a client side component. Bydefault all Next.js components are server side components.
 
@@ -14,6 +15,8 @@ const NavItems = () => {
   const isAnyOpen = activeIndex !== null
 
   const navRef = useRef< HTMLDivElement | null >(null)
+
+  useOnClickOutside(navRef, () => setActiveIndex(null))
 
   return (
     <div className="flex gap-4 h-full">
