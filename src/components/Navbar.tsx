@@ -3,6 +3,7 @@ import MaxWidthWrapper from './MaxWidthWrapper'
 import Link from 'next/link'
 import { Icons } from './Icons'
 import NavItems from './NavItems'
+import { buttonVariants } from './ui/button'
 
 const Navbar = () => {
 
@@ -30,7 +31,11 @@ const Navbar = () => {
                         {/* Right side of navbar */}
                         <div className="ml-auto flex items-center">
                             <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-
+                                {user ? null : (
+                                    <Link href={"/sign-in"} className={buttonVariants({variant: "ghost"})}>
+                                        Sign in
+                                    </Link>
+                                )}
                             </div>
                         </div>
                     </div>
