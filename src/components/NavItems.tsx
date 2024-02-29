@@ -11,6 +11,8 @@ const NavItems = () => {
   // Everything is is the same as using useState while in JS. The only new thing is the content within <>
   // Since this is TypeScript, we need to define the data types that the variable of the state, i.e., the variable "activeIndex" for this case, can accept.
 
+  const isAnyOpen = activeIndex !== null
+
   return (
     <div className="flex gap-4 h-full">
       {PRODUCT_CATEGORIES.map((category, i) => {
@@ -34,6 +36,7 @@ const NavItems = () => {
             handleOpen={handleOpen}
             isOpen={isOpen}
             key={category.value}
+            isAnyOpen={isAnyOpen}
           />
         )
       })}
