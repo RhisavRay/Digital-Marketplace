@@ -19,5 +19,26 @@ export const PRODUCT_CATEGORIES = [
                 imgSrc: "/nav/ui-kits/purple.jpg"
             }
         ]
+    },
+    {
+        label: "Icons",
+        value: "icons" as const,
+        featured: [
+            {
+                name: "Favourite Icon Picks",
+                href: "#",
+                imgSrc: "/nav/icons/picks.jpg"
+            },
+            {
+                name: "New Arrivals",
+                href: "#",
+                imgSrc: "/nav/icons/new.jpg"
+            },
+            {
+                name: "BestSelling Icons",
+                href: "#",
+                imgSrc: "/nav/icons/bestsellers.jpg"
+            }
+        ]
     }
 ]
