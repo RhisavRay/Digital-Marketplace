@@ -14,9 +14,9 @@ const NavItems = () => {
     <div className="flex gap-4 h-full">
       {PRODUCT_CATEGORIES.map((category, i) => {
 
-        
 
-        return()
+
+        return(<></>)
       })}
     </div>
   )
