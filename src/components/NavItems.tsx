@@ -6,9 +6,9 @@ import { useState } from "react"
 
 const NavItems = () => {
 
-  const [activeState, setActiveState] = useState< null | number >(null)
+  const [activeIndex, setActiveIndex] = useState< null | number >(null)
   // Everything is is the same as using useState while in JS. The only new thing is the content within <>
-  // Since this is TypeScript, we need to define the data types that the variable of the state, i.e., the variable "activeState" for this case, can accept.
+  // Since this is TypeScript, we need to define the data types that the variable of the state, i.e., the variable "activeIndex" for this case, can accept.
 
   return (
     <div className="flex gap-4 h-full">
