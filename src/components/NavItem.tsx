@@ -14,7 +14,9 @@ const NavItem = ({ category, handleOpen, isAnyOpen, isOpen } : NavItemProps) => 
   return (
     <div className="flex">
         <div className="relative flex items-center">
-            <Button className="gap-1.5"></Button>
+            <Button className="gap-1.5" onClick={handleOpen}>
+                {category.label}
+            </Button>
         </div>
     </div>
   )
