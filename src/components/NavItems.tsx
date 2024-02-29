@@ -1,6 +1,6 @@
 "use client"
 import { PRODUCT_CATEGORIES } from "@/config"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import NavItem from "./NavItem"
 
  //Added to turn it to a client side component. Bydefault all Next.js components are server side components.
@@ -12,6 +12,8 @@ const NavItems = () => {
   // Since this is TypeScript, we need to define the data types that the variable of the state, i.e., the variable "activeIndex" for this case, can accept.
 
   const isAnyOpen = activeIndex !== null
+
+  const navRef = useRef< HTMLDivElement | null >(null)
 
   return (
     <div className="flex gap-4 h-full">
