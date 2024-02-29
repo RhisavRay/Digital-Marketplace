@@ -1,4 +1,5 @@
 "use client"
+import { PRODUCT_CATEGORIES } from "@/config"
 import { useState } from "react"
 
  //Added to turn it to a client side component. Bydefault all Next.js components are server side components.
@@ -10,7 +11,14 @@ const NavItems = () => {
   // Since this is TypeScript, we need to define the data types that the variable of the state, i.e., the variable "activeState" for this case, can accept.
 
   return (
-    <div className="flex gap-4 h-full"></div>
+    <div className="flex gap-4 h-full">
+      {PRODUCT_CATEGORIES.map((category, i) => {
+
+        
+
+        return()
+      })}
+    </div>
   )
 }
 
