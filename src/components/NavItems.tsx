@@ -1,6 +1,6 @@
 "use client"
 import { PRODUCT_CATEGORIES } from "@/config"
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import NavItem from "./NavItem"
 import { useOnClickOutside } from "@/hooks/use-on-click-outside"
 
@@ -13,6 +13,20 @@ const NavItems = () => {
   // Since this is TypeScript, we need to define the data types that the variable of the state, i.e., the variable "activeIndex" for this case, can accept.
 
   const isAnyOpen = activeIndex !== null
+
+  useEffect(() => {
+    const handler = (e:KeyboardEvent) => {
+      if(e.key === 'Escape'){
+        setActiveIndex(null)
+      }
+    }
+
+    document.addEventListener('keydown',handler)
+
+    return () => {
+      document.removeEventListener('keydown',handler)
+    }
+  }, [])
 
   const navRef = useRef< HTMLDivElement | null >(null)
 
