@@ -4,6 +4,9 @@ import { ShoppingCart } from "lucide-react"
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet"
 
 const Cart = () => {
+
+  const itemCount = 0
+
   return (
     <Sheet>
       <SheetTrigger className="group -m-2 flex items-center p-2">
@@ -18,6 +21,8 @@ const Cart = () => {
         <SheetHeader className="space-y-2.5 pr-6">
           <SheetTitle>Cart (0)</SheetTitle>
         </SheetHeader>
+
+
       </SheetContent>
     </Sheet>
   )
