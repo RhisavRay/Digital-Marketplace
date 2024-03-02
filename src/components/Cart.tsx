@@ -1,6 +1,10 @@
+"use client"
+
+import { Sheet } from "./ui/sheet"
+
 const Cart = () => {
   return (
-    <div>Cart</div>
+    <Sheet></Sheet>
   )
 }
 
