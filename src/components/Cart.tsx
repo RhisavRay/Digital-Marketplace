@@ -14,7 +14,7 @@ const Cart = () => {
         </span>
       </SheetTrigger>
 
-      <SheetContent className="flex w-4 flex-col pr-0 sm:max-w-lg">
+      <SheetContent className="flex w-full flex-col pr-0 sm:max-w-lg">
         <SheetHeader className="space-y-2.5 pr-6">
           <SheetTitle>Cart (0)</SheetTitle>
         </SheetHeader>
