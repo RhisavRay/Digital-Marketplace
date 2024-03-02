@@ -22,7 +22,12 @@ const Cart = () => {
           <SheetTitle>Cart (0)</SheetTitle>
         </SheetHeader>
 
-
+        {itemCount > 0 ? (
+          <div className="flex w-full flex-col pr-6">
+            {/* TODO: Cart Logic */}
+            Cart Items
+          </div>
+        ) : ()}
       </SheetContent>
     </Sheet>
   )
