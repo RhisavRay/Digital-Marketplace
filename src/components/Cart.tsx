@@ -13,6 +13,10 @@ const Cart = () => {
           0
         </span>
       </SheetTrigger>
+
+      <SheetContent className="flex w-4 flex-col pr-0 sm:max-w-lg">
+        
+      </SheetContent>
     </Sheet>
   )
 }
