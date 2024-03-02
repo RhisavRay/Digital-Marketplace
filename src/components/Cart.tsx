@@ -32,6 +32,17 @@ const Cart = () => {
 
             <div className="space-y-4 pr-6">
               <Separator/>
+              <div className="space-y-1 5 text-sm">
+                <div className="flex">
+                  <span className="flex-1">Shipping</span>
+                  <span>Free</span>
+                </div>
+
+                <div className="flex">
+                  <span className="flex-1">Transaction Fee</span>
+                  <span>1</span>
+                </div>
+              </div>
             </div>
           </>
         ) : ()}
