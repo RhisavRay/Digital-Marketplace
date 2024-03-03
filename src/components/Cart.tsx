@@ -9,7 +9,7 @@ import { buttonVariants } from "./ui/button"
 
 const Cart = () => {
 
-  const itemCount = 1
+  const itemCount = 0
 
   const fee = 1
 
