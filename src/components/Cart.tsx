@@ -45,7 +45,14 @@ const Cart = () => {
                   <span className="flex-1">Transaction Fee</span>
                   <span>{formatPrice(fee)}</span>
                 </div>
+
+                <div className="flex">
+                  <span className="flex-1">Total</span>
+                  <span>{formatPrice(fee)}</span>
+                </div>
               </div>
+
+              
             </div>
           </>
         ) : (<></>)}
