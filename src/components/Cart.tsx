@@ -69,6 +69,10 @@ const Cart = () => {
             <div className="relative mb-4 h-60 w-60 text-muted-foreground" aria-hidden="true">
               <Image src="/hippo-empty-cart.png" fill alt="Empty cart hippo image"/>
             </div>
+
+            <div className="text-xl font-semibold">Your cart is empty</div>
+
+            
           </div>
         )}
       </SheetContent>
