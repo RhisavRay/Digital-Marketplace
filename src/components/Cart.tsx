@@ -76,7 +76,7 @@ const Cart = () => {
               <Link href="/products" className={buttonVariants({
                 variant: "link",
                 size: "sm",
-                className: "text-sm text-muted-foreground"
+                className: "text-sm text-muted-foreground font-bold"
               })}>
                 Add items to your cart to checkout
               </Link>
