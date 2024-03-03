@@ -45,7 +45,7 @@ const Cart = () => {
               </div>
             </div>
           </>
-        ) : ()}
+        ) : (<></>)}
       </SheetContent>
     </Sheet>
   )
