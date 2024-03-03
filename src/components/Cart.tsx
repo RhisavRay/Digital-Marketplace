@@ -65,9 +65,9 @@ const Cart = () => {
             </div>
           </>
         ) : (
-          <div className="flex h-full flex-col items center justify-center space-y-1">
+          <div className="flex h-full flex-col items-center justify-center space-y-1">
             <div className="relative mb-4 h-60 w-60 text-muted-foreground" aria-hidden="true">
-              <Image src="/hippo-emty-cart.png" fill alt="Empty cart hippo image"/>
+              <Image src="/hippo-empty-cart.png" fill alt="Empty cart hippo image"/>
             </div>
           </div>
         )}
