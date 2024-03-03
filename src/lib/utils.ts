@@ -13,7 +13,7 @@ export function formatPrice(
   } = {}
 )
 {
-  const {currency = "INR", notation = "cpmpact"} = options
+  const {currency = "INR", notation = "compact"} = options
 
   const numericPrice = typeof price === "string" ? parseFloat(price) : price
 
