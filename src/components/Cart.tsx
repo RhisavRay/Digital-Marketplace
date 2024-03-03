@@ -6,6 +6,7 @@ import { Separator } from "./ui/separator"
 import { formatPrice } from "@/lib/utils"
 import Link from "next/link"
 import { buttonVariants } from "./ui/button"
+import Image from "next/image"
 
 const Cart = () => {
 
@@ -63,7 +64,13 @@ const Cart = () => {
               </SheetFooter>
             </div>
           </>
-        ) : (<></>)}
+        ) : (
+          <div className="flex h-full flex-col items center justify-center space-y-1">
+            <div className="relative mb-4 h-60 w-60 text-muted-foreground" aria-hidden="true">
+              <Image src="/hippo-emty-cart.png" fill alt="Empty cart hippo image"/>
+            </div>
+          </div>
+        )}
       </SheetContent>
     </Sheet>
   )
