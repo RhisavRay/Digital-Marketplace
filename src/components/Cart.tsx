@@ -6,7 +6,7 @@ import { Separator } from "./ui/separator"
 
 const Cart = () => {
 
-  const itemCount = 0
+  const itemCount = 1
 
   return (
     <Sheet>
