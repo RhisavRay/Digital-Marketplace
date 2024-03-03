@@ -52,7 +52,9 @@ const Cart = () => {
                 </div>
               </div>
 
-              <SheetFooter></SheetFooter>
+              <SheetFooter>
+                <SheetTrigger asChild></SheetTrigger>
+              </SheetFooter>
             </div>
           </>
         ) : (<></>)}
