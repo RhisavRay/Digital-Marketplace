@@ -4,6 +4,8 @@ import { ShoppingCart } from "lucide-react"
 import { Sheet, SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "./ui/sheet"
 import { Separator } from "./ui/separator"
 import { formatPrice } from "@/lib/utils"
+import Link from "next/link"
+import { buttonVariants } from "./ui/button"
 
 const Cart = () => {
 
@@ -53,7 +55,11 @@ const Cart = () => {
               </div>
 
               <SheetFooter>
-                <SheetTrigger asChild></SheetTrigger>
+                <SheetTrigger asChild>
+                  <Link href="/cart" className={buttonVariants({
+                    className: "w-full"
+                  })}>Continue to Checkout</Link>
+                </SheetTrigger>
               </SheetFooter>
             </div>
           </>
