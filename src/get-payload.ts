@@ -1,5 +1,7 @@
 import dotenv from "dotenv"
+import { init } from "next/dist/compiled/webpack/webpack"
 import path from "path"
+import payload from "payload"
 import { InitOptions } from "payload/config"
 
 dotenv.config({
@@ -24,4 +26,16 @@ interface Args
 export const getPayloadClient = async({ initOptions }: Args = {}) => {
     if(!process.env.PAYLOAD_SECRET)
         throw new Error("Missing PAYLOAD_SECRET environment variable")
+
+    if(cached.client)
+        return cached.client
+
+    if(!cached.promise)
+        cached.promise = payload.init({
+            secret: process.env.PAYLOAD_SECRET,
+            local: initOptions?.express ? false : true,
+            ...(initOptions || {})
+        })
+
+    
 }
