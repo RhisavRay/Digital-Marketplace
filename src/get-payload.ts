@@ -1,5 +1,6 @@
 import dotenv from "dotenv"
 import path from "path"
+import { InitOptions } from "payload/config"
 
 dotenv.config({
     path: path.resolve(__dirname, "../.env")
