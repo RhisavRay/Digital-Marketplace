@@ -15,6 +15,11 @@ if(!cached)
     }
 }
 
-export const getPayloadClient = async() => {
+interface Args
+{
+    initOptions?: Partial<InitOptions>
+}
+
+export const getPayloadClient = async({ initOptions }: Args) => {
 
 }
