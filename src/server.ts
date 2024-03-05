@@ -17,7 +17,7 @@ const start = async() => {
         }
     })
 
-    nextHandler(req, res)
+    app.use((req, res) => nextHandler(req, res))
 }
 
 start()
