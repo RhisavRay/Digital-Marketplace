@@ -1,5 +1,6 @@
-import express from "express"
+import express, { request } from "express"
 import { getPayloadClient } from "./get-payload"
+import { nextHandler } from "./next-utils"
 
 const app = express()
 
@@ -15,6 +16,8 @@ const start = async() => {
             }
         }
     })
+
+    nextHandler(req, res)
 }
 
 start()
