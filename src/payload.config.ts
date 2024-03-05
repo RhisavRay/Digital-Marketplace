@@ -1,3 +1,4 @@
+import { mongooseAdapter } from "@payloadcms/db-mongodb";
 import { slateEditor } from "@payloadcms/richtext-slate";
 import { buildConfig } from "payload/config";
 
@@ -8,5 +9,6 @@ export default buildConfig({
         admin: '/sell'
     },
     admin: {},
-    editor: slateEditor({})
+    editor: slateEditor({}),
+    db: mongooseAdapter()
 })
