@@ -1,7 +1,7 @@
 
 
 import { Icons } from "@/components/Icons"
-import { buttonVariants } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { cn } from "@/lib/utils"
@@ -30,7 +30,7 @@ const Page = () => {
                     </div>
 
                     <div className="grid gap-6">
-                        <form onSubmit={}>
+                        <form>
                             <div className="grid gap-2">
                                 <div className="grid gap-1 py-2">
                                     <Label htmlFor="email">Email</Label>
@@ -40,6 +40,17 @@ const Page = () => {
                                         placeholder="you@example.com"
                                     />
                                 </div>
+
+                                <div className="grid gap-1 py-2">
+                                    <Label htmlFor="password">Password</Label>
+                                    <Input className={cn({
+                                            "focus-visible:ring-red-500": true
+                                        })}
+                                        placeholder="password"
+                                    />
+                                </div>
+
+                                <Button>Sign Up</Button>
                             </div>
                         </form>
                     </div>
