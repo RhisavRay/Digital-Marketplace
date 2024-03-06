@@ -1,5 +1,6 @@
 import { Icons } from "@/components/Icons"
 import { buttonVariants } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import React from "react"
 
@@ -14,10 +15,23 @@ const Page = () => {
                         <h1 className="text-2xl font-bold"> Create an account </h1>
 
                         <Link href='/sign-in' className={buttonVariants({
-                            variant: "link"
+                            variant: "link",
+                            className: "gap-1.5"
                         })}>
                             Already have an account with us?
+
+                            <ArrowRight className="h-4 w-4"/>
                         </Link>
+                    </div>
+
+                    <div className="grid gap-6">
+                        <form onSubmit={}>
+                            <div className="grid gap-2">
+                                <div className="grid gap-1 py-2">
+                                    
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
