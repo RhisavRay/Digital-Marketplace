@@ -4,7 +4,7 @@
         "src/collections/**/*ts",
         "src/trps/index.ts"
     ],
-    "exec": "ts-node --project tsconfic.server.json src/server.js -- -I",
+    "exec": "ts-node --project tsconfig.server.json src/server.ts -- -I",
     "ext": "js ts",
     "stdin": false
 }

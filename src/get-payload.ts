@@ -1,5 +1,4 @@
-import dotenv from "dotenv"
-import { init } from "next/dist/compiled/webpack/webpack"
+import dotenv from 'dotenv'
 import path from "path"
 import payload from "payload"
 import { InitOptions } from "payload/config"
@@ -38,7 +37,7 @@ export const getPayloadClient = async({ initOptions }: Args = {}) => {
         })
 
     try {
-        await cached.client = await cached.promise
+        cached.client = await cached.promise
     } catch (e: unknown) {
         cached.promise = null
         throw e
