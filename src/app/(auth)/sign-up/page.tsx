@@ -1,5 +1,3 @@
-
-
 import { Icons } from "@/components/Icons"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -8,8 +6,12 @@ import { cn } from "@/lib/utils"
 import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import React from "react"
+import { useForm } from "react-hook-form"
 
 const Page = () => {
+
+    const {} = useForm
+
     return(
         <>
             <div className="flex flex-col items-center justify-center pt-20 lg:px-0 container relative">
