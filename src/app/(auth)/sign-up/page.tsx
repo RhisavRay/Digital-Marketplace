@@ -16,16 +16,16 @@ const Page = () => {
         email: z.string().email(),
         password: z.string()
             .min(8, {
-                message: "Pasword must be atleast 8 characters long"
+                message: 'Pasword must be atleast 8 characters long'
             })
     })
 
     const {
         register,
         handleSubmit,
-        formState: {errors}
+        formState: { errors }
     } = useForm({
-        resolver: zodResolver()
+        resolver: zodResolver(AuthCredentialValidator)
     })
 
     return(
