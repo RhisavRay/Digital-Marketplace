@@ -8,8 +8,17 @@ import Link from "next/link"
 import React from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
+import { z } from "zod"
 
 const Page = () => {
+
+    const AuthCredentialValidator = z.object({
+        email: z.string().email(),
+        password: z.string()
+            .min(8, {
+                message: "Pasword must be atleast 8 characters long"
+            })
+    })
 
     const {
         register,
