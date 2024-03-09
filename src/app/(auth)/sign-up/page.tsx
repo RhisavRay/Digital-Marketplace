@@ -20,11 +20,13 @@ const Page = () => {
             })
     })
 
+    type TAuthCredentialValidator = z.infer<typeof AuthCredentialValidator>
+
     const {
         register,
         handleSubmit,
         formState: { errors }
-    } = useForm({
+    } = useForm<TAuthCredentialValidator>({
         resolver: zodResolver(AuthCredentialValidator)
     })
 
@@ -52,19 +54,23 @@ const Page = () => {
                             <div className="grid gap-2">
                                 <div className="grid gap-1 py-2">
                                     <Label htmlFor="email">Email</Label>
-                                    <Input className={cn({
-                                            "focus-visible:ring-red-500": true
+                                    <Input
+                                        className={cn({
+                                            "focus-visible:ring-red-500": errors.email
                                         })}
                                         placeholder="you@example.com"
+                                        {...register('email')}
                                     />
                                 </div>
 
                                 <div className="grid gap-1 py-2">
                                     <Label htmlFor="password">Password</Label>
-                                    <Input className={cn({
-                                            "focus-visible:ring-red-500": true
+                                    <Input
+                                        className={cn({
+                                            "focus-visible:ring-red-500": errors.password
                                         })}
                                         placeholder="password"
+                                        {...register('password')}
                                     />
                                 </div>
 
