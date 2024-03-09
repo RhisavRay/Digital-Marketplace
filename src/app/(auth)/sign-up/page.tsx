@@ -7,10 +7,17 @@ import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 import React from "react"
 import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
 
 const Page = () => {
 
-    const {} = useForm
+    const {
+        register,
+        handleSubmit,
+        formState: {errors}
+    } = useForm({
+        resolver: zodResolver()
+    })
 
     return(
         <>
