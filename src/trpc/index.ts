@@ -5,3 +5,5 @@ export const appRouter = router({
         return "hello"
     })
 })
+
+export type AppRouter = typeof appRouter
