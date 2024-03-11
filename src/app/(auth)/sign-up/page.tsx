@@ -50,7 +50,7 @@ const Page = () => {
                     </div>
 
                     <div className="grid gap-6">
-                        <form>
+                        <form onSubmit={handleSubmit(/* Have a sublit function. Not defined yet */)}>
                             <div className="grid gap-2">
                                 <div className="grid gap-1 py-2">
                                     <Label htmlFor="email">Email</Label>
