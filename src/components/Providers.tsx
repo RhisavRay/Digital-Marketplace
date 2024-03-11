@@ -11,7 +11,13 @@ const Providers = () => {
     const [trpcClient] = useState(() => trpc.createClient({
         links: [
             httpBatchLink({
-                url: `${process.env.}`
+                url: `${process.env.NEXT_PUBLIC_SERVER_URL}/api/trpc`,
+                fetch(url, options) {
+                    return fetch(url, {
+                        ...options,
+                        credentials: 'include'
+                    })
+                }
             })
         ]
     }))
