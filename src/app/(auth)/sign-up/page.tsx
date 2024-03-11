@@ -21,7 +21,9 @@ const Page = () => {
         resolver: zodResolver(AuthCredentialValidator)
     })
 
-    const onSubmit = ({email, password} : TAuthCredentialValidator) => {}
+    const onSubmit = ({email, password} : TAuthCredentialValidator) => {
+        // Send data to the server to handle the sign up/in logic
+    }
 
     return(
         <>
