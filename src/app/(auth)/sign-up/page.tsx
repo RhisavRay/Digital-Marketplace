@@ -8,8 +8,8 @@ import Link from "next/link"
 import React from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { z } from "zod"
 import { AuthCredentialValidator, TAuthCredentialValidator } from "@/lib/validators/account-credentials-validator"
+import { trpc } from "@/trpc/client"
 
 const Page = () => {
 
@@ -20,6 +20,9 @@ const Page = () => {
     } = useForm<TAuthCredentialValidator>({
         resolver: zodResolver(AuthCredentialValidator)
     })
+
+    const { data } = trpc.AnyApiRoute.useQuery()
+    console.log(data)
 
     const onSubmit = ({email, password} : TAuthCredentialValidator) => {
         // Send data to the server to handle the sign up/in logic
