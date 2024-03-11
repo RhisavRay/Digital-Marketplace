@@ -30,7 +30,7 @@ const Page = () => {
         resolver: zodResolver(AuthCredentialValidator)
     })
 
-    const onSubmit = ({} : TAuthCredentialValidator) => {}
+    const onSubmit = ({email, password} : TAuthCredentialValidator) => {}
 
     return(
         <>
