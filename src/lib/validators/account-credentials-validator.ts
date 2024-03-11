@@ -8,4 +8,4 @@ export const AuthCredentialValidator = z.object({
         })
 })
 
-type TAuthCredentialValidator = z.infer<typeof AuthCredentialValidator>
+export type TAuthCredentialValidator = z.infer<typeof AuthCredentialValidator>
