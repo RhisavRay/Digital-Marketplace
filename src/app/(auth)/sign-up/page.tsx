@@ -30,6 +30,8 @@ const Page = () => {
         resolver: zodResolver(AuthCredentialValidator)
     })
 
+    const onSubmit = ({} : TAuthCredentialValidator) => {}
+
     return(
         <>
             <div className="flex flex-col items-center justify-center pt-20 lg:px-0 container relative">
@@ -50,7 +52,7 @@ const Page = () => {
                     </div>
 
                     <div className="grid gap-6">
-                        <form onSubmit={handleSubmit(/* Have a sublit function. Not defined yet */)}>
+                        <form onSubmit={handleSubmit(onSubmit)}>
                             <div className="grid gap-2">
                                 <div className="grid gap-1 py-2">
                                     <Label htmlFor="email">Email</Label>
