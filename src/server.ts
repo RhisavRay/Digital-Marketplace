@@ -9,6 +9,8 @@ const app = express()
 const PORT = Number(process.env.PORT) || 3000
 // Says that the port will be 3000 by default in development mode, and a port for production will be given later on
 
+const createContext = ({req, res} : trpcExpress.CreateExpressContextOptions) => ({req, res})
+
 const start = async() => {
     const payload = await getPayloadClient({
         initOptions: {
@@ -20,7 +22,8 @@ const start = async() => {
     })
 
     app.use('/api/trpc', trpcExpress.createExpressMiddleware({
-        router: appRouter
+        router: appRouter,
+        createContext
     }))
 
     app.use((req, res) => nextHandler(req, res))
