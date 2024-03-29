@@ -26,7 +26,7 @@ const Page = () => {
     const { mutate, isLoading } = trpc.auth.createPayloadUser.useMutation({})
 
     const onSubmit = ({email, password} : TAuthCredentialValidator) => {
-        // Send data to the server to handle the sign up/in logic
+        mutate({ email, password })
     }
 
     return(
