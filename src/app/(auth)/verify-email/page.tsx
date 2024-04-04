@@ -24,6 +24,10 @@ const VerifyEmailPage = ({ searchParams }: PageProps) => {
                                 alt="Hippo email sent image"
                             />
                         </div>
+
+                        <h3 className="font-semibold text-2xl">
+                            Check your Email
+                        </h3>
                     </div>
                 ) }
             </div>
