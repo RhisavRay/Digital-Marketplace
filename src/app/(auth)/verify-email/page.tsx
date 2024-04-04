@@ -20,7 +20,7 @@ const VerifyEmailPage = ({ searchParams }: PageProps) => {
                     <div className="flex h-full flex-col items-center justify-center space-y-1">
                         <div className="relative mb-4 h-16 w-16 text-muted-foreground">
                             <Image
-                                src="hippo-sent-email.png"
+                                src="/hippo-sent-email.png"
                                 fill
                                 alt="Hippo email sent image"
                             />
@@ -45,3 +45,5 @@ const VerifyEmailPage = ({ searchParams }: PageProps) => {
         </div>
     )
 }
+
+export default VerifyEmailPage
