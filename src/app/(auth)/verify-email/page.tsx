@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 interface PageProps {
     searchParams: {
         [key: string]: string | string[] | undefined
@@ -14,7 +16,15 @@ const VerifyEmailPage = ({ searchParams }: PageProps) => {
                 { token && typeof token === "string" ? (
                     <div className="grid gap-6"></div>
                 ) : (
-                    <div className="flex h-full flex-col items-center justify-center space-y-1"></div>
+                    <div className="flex h-full flex-col items-center justify-center space-y-1">
+                        <div className="relative mb-4 h-16 w-16 text-muted-foreground">
+                            <Image
+                                src="hippo-sent-email.png"
+                                fill
+                                alt="Hippo email sent image"
+                            />
+                        </div>
+                    </div>
                 ) }
             </div>
         </div>
